@@ -1,6 +1,21 @@
 import panelistas.*
-describe "horacioPagani"{
-	test "hacemos saludar a horacio pagani"{
-		assert.equals("Holaaaa", horacioPagani.saludar())
+
+describe "lizzyTagliani"{
+	test "lizzy comienza con 10 unidades de humor"{
+		assert.that(lizzyTagliani.humor() == 10)
+	}
+	test "Lizzy Tagliani toma agua y queda con 20 unidades de humor"{
+		lizzyTagliani.tomarAgua()
+		assert.that(lizzyTagliani.humor() == 20)
+	}
+	test "Lizzy Tagliani se calma 3 minutos, quedando asi con 16 unidades de humor"{
+		lizzyTagliani.calmarse(3)
+		assert.that(lizzyTagliani.humor() == 16 )
+	}
+}
+
+describe "totiPasman"{
+	test "toti comienza con una soberbia de 10 unidades"{
+		assert.equals
 	}
 }

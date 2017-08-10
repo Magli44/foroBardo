@@ -1,9 +1,6 @@
 object horacioPagani {
 	var nivelDeEnojo
 
-	method saludar(){
-		 return "Holaaaa"
-	}
 	method elevarVoz() {
 		self.aumentarNivelDeEnojo(10)
 	}
@@ -83,5 +80,8 @@ object lizzyTagliani {
 
 	method estaDeMalhumor() {
 		return humor < 0
+	}
+	method humor(){
+		return humor
 	}
 }
