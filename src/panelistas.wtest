@@ -1,0 +1,6 @@
+import panelistas.*
+describe "horacioPagani"{
+	test "hacemos saludar a horacio pagani"{
+		assert.equals("Holaaaa", horacioPagani.saludar())
+	}
+}

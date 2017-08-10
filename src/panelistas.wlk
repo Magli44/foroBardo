@@ -1,6 +1,9 @@
 object horacioPagani {
 	var nivelDeEnojo
 
+	method saludar(){
+		 return "Holaaaa"
+	}
 	method elevarVoz() {
 		self.aumentarNivelDeEnojo(10)
 	}
