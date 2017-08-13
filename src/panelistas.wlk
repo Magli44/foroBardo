@@ -56,6 +56,12 @@ object totiPasman {
 	method aumentarSoberbia(unaCantidad) {
 		soberbia += unaCantidad
 	}
+	method soberbia(){
+		return soberbia
+	}
+	method tieneSed(){
+		return tieneSed
+	}
 }
 
 object lizzyTagliani {

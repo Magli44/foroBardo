@@ -1,0 +1,12 @@
+import panelistas.totiPasman
+
+describe "totiPasman"{
+	test "totiPasman comienza con 10 unidades de soberbia"{
+		assert.equals(10, totiPasman.soberbia())
+	}
+	test "totiPasma toma agua y ya no tiene sed"{
+		totiPasman.tomarAgua()
+		assert.notThat(totiPasman.tieneSed())
+	}
+	test ""
+}

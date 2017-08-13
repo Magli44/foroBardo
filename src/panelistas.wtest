@@ -13,9 +13,3 @@ describe "lizzyTagliani"{
 		assert.that(lizzyTagliani.humor() == 16 )
 	}
 }
-
-describe "totiPasman"{
-	test "toti comienza con una soberbia de 10 unidades"{
-		assert.equals
-	}
-}
