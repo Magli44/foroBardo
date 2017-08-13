@@ -1,4 +1,4 @@
-import panelistas.*
+import panelistas.lizzyTagliani
 
 describe "lizzyTagliani"{
 	test "lizzy comienza con 10 unidades de humor"{

@@ -4,9 +4,18 @@ describe "totiPasman"{
 	test "totiPasman comienza con 10 unidades de soberbia"{
 		assert.equals(10, totiPasman.soberbia())
 	}
-	test "totiPasma toma agua y ya no tiene sed"{
+	
+	test "totiPasman toma agua y ya no tiene sed"{
 		totiPasman.tomarAgua()
 		assert.notThat(totiPasman.tieneSed())
 	}
-	test ""
+	test "totiPasman se calma 3 minutos y le disminuye la soberbia el doble de unidades segun la cantidad de minutos"{
+		totiPasman.calmarse(3)
+		assert.equals(4, totiPasman.soberbia())
+	}
+	test "totiPasman eleva la voz, le aumenta la soberbia en 10 unidades y tiene sed"{
+		totiPasman.elevarVoz()
+		assert.equals(20, totiPasman.soberbia())
+		assert.that(totiPasman.tieneSed())
+	}
 }
