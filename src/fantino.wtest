@@ -1,0 +1,10 @@
+import conductores.fantino
+import panelistas.*
+
+describe "fantino"{
+	test " fantino hace opinar de deportes a horacioPagani, que tiene 10 unidades de nivel de enojo. Luego de opinar quefa con 0 ya que no queda cliente"{
+		horacioPagani.nivelDeEnojo(10)
+		fantino.hacerOpinarDeDeportesA(horacioPagani)
+		assert.equals(0, horacioPagani.nivelDeEnojo())
+	}
+} 
