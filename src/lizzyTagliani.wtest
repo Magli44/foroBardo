@@ -1,15 +1,16 @@
 import panelistas.lizzyTagliani
 
 describe "lizzyTagliani"{
-	test "lizzy comienza con 10 unidades de humor"{
+	test "lizzyTagliani comienza con 10 unidades de humor"{
 		assert.that(lizzyTagliani.humor() == 10)
 	}
-	test "Lizzy Tagliani toma agua y queda con 20 unidades de humor"{
+	test "lizzyTagliani toma agua y queda con 20 unidades de humor"{
 		lizzyTagliani.tomarAgua()
 		assert.that(lizzyTagliani.humor() == 20)
 	}
-	test "Lizzy Tagliani se calma 3 minutos, quedando asi con 16 unidades de humor"{
-		lizzyTagliani.calmarse(3)
-		assert.that(lizzyTagliani.humor() == 16 )
+	test "lizzyTagliani esta de mal humor (humor menor a 0) se calma 10 minutos,lo cual aumenta su humor el doble de los minutos, quedando asi con 10 unidades de humor"{
+		lizzyTagliani.humor(-10)
+		lizzyTagliani.calmarse(10)
+		assert.equals(10 , lizzyTagliani.humor())
 	}
 }

@@ -90,6 +90,9 @@ object lizzyTagliani {
 	method estaDeMalhumor() {
 		return humor < 0
 	}
+	method humor(unHumor){
+		humor = unHumor
+	}
 	method humor(){
 		return humor
 	}
