@@ -1,0 +1,20 @@
+import panelistas.horacioPagani
+
+describe "horacioPagani"{
+	test "horaciPagani comienza con 10 unidades de nivel de enojo, eleva la voz, que aumenta 10 unidades, y queda con 20 unidades"{
+		horacioPagani.nivelDeEnojo(10)
+		horacioPagani.elevarVoz()
+		assert.equals(20, horacioPagani.nivelDeEnojo())
+	}
+	test "horacioPagani toma agua y le disminuye el nivel de enojo un 10%"{
+		horacioPagani.nivelDeEnojo(10)
+		horacioPagani.tomarAgua()
+		assert.equals(9, horacioPagani.nivelDeEnojo())
+	}
+	test "horacioPagani esta caliente (nivel de enojo mayor a 20) y se calma, lo cual lo deja con 0 unidades de nivel de enojo"{
+		horacioPagani.nivelDeEnojo(20)
+		horacioPagani.calmarse()
+		assert.equals(0, horacioPagani.nivelDeEnojo())
+	}
+	
+}
