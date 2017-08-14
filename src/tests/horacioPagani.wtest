@@ -13,7 +13,7 @@ describe "horacioPagani"{
 	}
 	test "horacioPagani esta caliente (nivel de enojo mayor a 20) y se calma, lo cual lo deja con 0 unidades de nivel de enojo"{
 		horacioPagani.nivelDeEnojo(20)
-		horacioPagani.calmarse()
+		horacioPagani.calmarse(5)
 		assert.equals(0, horacioPagani.nivelDeEnojo())
 	}
 	

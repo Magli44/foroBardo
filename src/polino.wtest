@@ -2,7 +2,7 @@ import conductores.polino
 import panelistas.*
 
 describe "polino"{
-	test "polino hace opinar de chimentos a lizzyTagliani, comienza con 10 unidades de humor y termina con 0 unidades"{
+	test "polino hace opinar de chimentos a lizzyTagliani, comienza con 10 unidades de humor y termina con 20 unidades"{
 		polino.hacerOpinarDeChimentosA(lizzyTagliani)
 		assert.equals(20, lizzyTagliani.humor())
 		}
