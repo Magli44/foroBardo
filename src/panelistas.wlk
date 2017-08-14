@@ -9,7 +9,7 @@ object horacioPagani {
 		self.disminuirNivelDeEnojo(nivelDeEnojo * 0.1)
 	}
 
-	method calmarse(unosMinutos) {
+	method calmarse() {
 		if (! self.estaCaliente()) {
 			nivelDeEnojo = 0
 		}
